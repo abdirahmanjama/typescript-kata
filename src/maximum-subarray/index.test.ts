@@ -5,8 +5,8 @@ describe("maximum subarray", () => {
         const arr = [1,2,3]
         expect(getMaximumSubarray(arr)).toBe(6);
     });
-    it("returns error if no values given", () => {
-        const arr = [1,2,3, -5, -5,1,1,-4]
-        expect(getMaximumSubarray(arr)).toBe(6);
+    it("return value if array length is 1", () => {
+        const arr = [0]
+        expect(getMaximumSubarray(arr)).toBe(0);
     } )
 })
