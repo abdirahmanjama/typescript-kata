@@ -9,11 +9,11 @@ describe("contains duplicate", () => {
 
     it("should return true if array contains duplicate", () =>{    
         const input : number[] = [11,11,4,5,1,1];
-        expect(containsDuplicate(input)).toBe(false);
+        expect(containsDuplicate(input)).toBe(true);
     });
 
     it("should return false if array contains no duplicate", () =>{    
-        const input : number[] = [11,9,4,5,1,1];
+        const input : number[] = [11,9,4,5,1,0];
         expect(containsDuplicate(input)).toBe(false);
     });
 })
