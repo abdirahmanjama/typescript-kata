@@ -1,0 +1,26 @@
+{
+  "name": "typescript-kata",
+  "version": "1.0.0",
+  "description": "data structures and algorithms on steroids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdirahmanjama/typescript-kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdirahmanjama/typescript-kata/issues"
+  },
+  "homepage": "https://github.com/abdirahmanjama/typescript-kata#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.18",
+    "typescript": "^4.7.4"
+  }
+}
