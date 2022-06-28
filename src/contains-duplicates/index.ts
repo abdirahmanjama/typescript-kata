@@ -1,4 +1,4 @@
-export const containsDuplicate = (nums: number[]) : boolean => {
+export const containsDuplicateTwin = (nums: number[]) : boolean => {
     let seen: Record<number, number>  = {};
     for(let i = 0; i < nums.length; i++){
         if(seen.hasOwnProperty(nums[i])){
@@ -7,4 +7,9 @@ export const containsDuplicate = (nums: number[]) : boolean => {
         seen[nums[i]] = i;
     }
     return false;
+}
+
+export const containsDuplicate = (nums: number[]) : boolean => {
+    let collection = new Set(nums);
+    return collection.size !== nums.length;
 }
