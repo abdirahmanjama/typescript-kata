@@ -10,6 +10,5 @@ export const containsDuplicateTwin = (nums: number[]) : boolean => {
 }
 
 export const containsDuplicate = (nums: number[]) : boolean => {
-    let collection = new Set(nums);
-    return collection.size !== nums.length;
+    return new Set(nums).size !== nums.length;
 }
