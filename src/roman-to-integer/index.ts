@@ -15,7 +15,7 @@ export const convertRomanToInteger = (romanNumeral : string) => {
         if(romanToInteger[romanNumeral[i]] < romanToInteger[romanNumeral[i+1]]){
             total-=  romanToInteger[romanNumeral[i]]
         }
-        else total+=romanToInteger[i]
+        else total+=romanToInteger[romanNumeral[i]]
     }
 
     return total;
