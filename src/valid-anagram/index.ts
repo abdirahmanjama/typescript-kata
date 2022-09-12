@@ -27,3 +27,7 @@ export const isAnagram = (erey : string, word: string ) => {
 
     return true;
 }
+
+export const isAnagramPart2 = (erey: string, word: string) => {
+    return erey.split("").sort().join() === word.split("").sort().join();
+}
