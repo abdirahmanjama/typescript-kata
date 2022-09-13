@@ -1,5 +1,5 @@
 
-const alphanumeric = /^[0-9a-z]/gi;
+const alphanumeric = /[^0-9a-z]/gi;
 
 export const isPalindrome = (word: string)  => {
     const term = word.toLowerCase().replace(alphanumeric, "");
