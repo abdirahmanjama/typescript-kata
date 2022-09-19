@@ -1,0 +1,1 @@
+# This folder isn't related to kata's at all
