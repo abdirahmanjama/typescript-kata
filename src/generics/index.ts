@@ -5,8 +5,8 @@ export const last = <T>(array: Array<T>) => {
 const numbers = last([1,2,3,4,5])
 const strings = last<string>(['a', 'bc', 'de', 'fg'])
 
-const makeArray = <T, Y>(x : T, y: Y) => {
-    return [x]
+const makeArray = <X, Y>(x : X, y: Y) : [X, Y]=> {
+    return [x, y]
 }
 
 const x = makeArray(5,5);
