@@ -5,9 +5,10 @@ export const last = <T>(array: Array<T>) => {
 const numbers = last([1,2,3,4,5])
 const strings = last<string>(['a', 'bc', 'de', 'fg'])
 
-const makeArray = <T>(x : T) => {
+const makeArray = <T, Y>(x : T, y: Y) => {
     return [x]
 }
 
-const x = makeArray<number>(5);
-const a = makeArray<string>('a');
+const x = makeArray(5,5);
+const a = makeArray('a', 'm');
+const xa = makeArray(1, 'a');
