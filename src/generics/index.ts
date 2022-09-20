@@ -12,3 +12,10 @@ const makeArray = <X, Y>(x : X, y: Y) : [X, Y]=> {
 const x = makeArray(5,5);
 const a = makeArray('a', 'm');
 const xa = makeArray(1, 'a');
+
+const generateFullName = <T extends {firstName: string, lastName:string}>(obj: T) => {
+    return {
+        ...obj,
+        fullName: obj.firstName + ' ' + obj.lastName
+    }
+}
