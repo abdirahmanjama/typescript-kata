@@ -9,6 +9,28 @@ const bubbleSort = <T>(numbers:T[]) => {
     return numbers
 }
 
+
+
+
+
+
+
+
+const sortBubble = (numbers: number []) => {
+    for(let i = 0; i < numbers.length - 1; i++){
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 const sort = (nums: number[]) => {
     let res = [];
     for(let i = 0; i < nums.length - 1; i++){

@@ -12,3 +12,4 @@ export const maxProfit = (nums : number []) : number => {
     }
     return profit;
 }
+
