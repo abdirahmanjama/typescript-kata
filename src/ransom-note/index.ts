@@ -52,7 +52,7 @@ export const canConstruct = (ransomNote: string, magazine: string) => {
 
 
 
-function noteRansom(ransom: string, magazine: string) {
+const noteRansom = (ransom: string, magazine: string) => {
     let frequencies: Record<string, number> = {};
 
     for (const char of magazine) {
