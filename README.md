@@ -2,6 +2,8 @@
 
 This is a data structures and algorithms playground. An area for you to hone your algorithmic programming skills.
 
+> _"One leetcode a day, keeps the doctors away."_
+
 Topics: Trees, Graphs, Arrays, LinkedLists (and TDD 😜)
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-getting-started)
