@@ -1,24 +1,22 @@
+export const isValid = (brackets: string) => {
 
-
-//reminder: given string with '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-export const isValid = (parenthesis: string) => {
     const map: any = {
-        "{": "}",
+        "(": ")",
         "[": "]",
-        "(": ")"
+        "{": "}"
     }
 
     const stack: any = [];
 
-    for (const bracket of parenthesis) {
-        if (bracket in map) {
-            stack.push(bracket)
+    for (const element of brackets) {
+        if (element in map) {
+            stack.push(element)
         }
-        else if (map[stack.pop()] !== bracket) {
+        else if (map[stack.pop()] !== element) {
             return false
         }
     }
 
     return stack.length === 0;
-}
 
+}
