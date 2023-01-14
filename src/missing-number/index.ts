@@ -3,5 +3,8 @@ export const missingNumber = (numbers: number[]) => {
 
     //second approach use gauss elimination, calculate expected total, then calculate actual total, return expected - actual. 
 
+    const expectedSum = (numbers.length) * (numbers.length + 1) / 2;
+    const actualSum = numbers.reduce((prev, curr) => prev + curr, 0);
+    return expectedSum - actualSum
 
 }
